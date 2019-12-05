@@ -1,0 +1,33 @@
+<script>
+	function myfunc(){
+        var str=prompt('Enter a string');
+        var strlen=str.length;
+        
+        for(i=0;i<strlen;i++){
+           var stc=str.charAt(i);
+           var flag=0;
+           for(j=0;j<strlen;j++){
+            var stk=str.charAt(j);
+              if(stc==stk){
+              	flag=flag+1;
+              }
+           }
+           
+           if(flag!=1){
+           	break;
+           }
+           
+        }
+       
+        if(flag!=1){
+        	alert('It is not an isogram');
+        }
+        else{
+        	alert('It is an isogram');
+        }
+
+        
+
+	}
+</script>
+<button onclick="myfunc(this)">Start</button>
